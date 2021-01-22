@@ -1,1 +1,61 @@
-<!-CSS for jldeyoung homepage-->
+h1 {
+    font: Verdana;
+    font-size: 30pt;
+    color: powderblue;
+    padding: 0px;
+    text-align: center;
+    column-span: all;
+    //background-color: indianred
+}
+
+body {
+    font-family: serif;
+    font-size: 18pt;
+    color: slategrey;
+    background-color: black;
+    text-align: left;
+    padding: 20px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+a {
+    color: inherit
+}
+
+button{
+    align-content: center;
+}
+
+.card {
+    padding: 10px;
+    border-color: darkgrey;
+    border-width: thin;
+    background-color: blanchedalmond;
+    color: black;
+    margin: 10px;
+    column-span: 1;
+    height: auto;
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: inherit;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translate(50%,0);
+}
+
+.columns {
+    margin-left: 100px;
+    margin-right: 100px;
+    column-count: 3;
+    column-gap: 20px;
+    column-width: 20%;
+}
