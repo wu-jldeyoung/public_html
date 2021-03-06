@@ -55,7 +55,7 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
+  <div class="w3-bar w3-text-black" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -63,10 +63,10 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> RESUME</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+    <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+    </a>-->
   </div>
 
   <!-- Navbar on small screens -->
@@ -75,24 +75,25 @@ body, html {
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">J-L <span class="w3-hide-small">DeYoung</span></span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">J-L<span class="w3-hide-small"> DeYoung</span></span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="w3-center"><em>Programmer. Student. Musician. Photographer.</em></p>
+  <p>Hi there. I'm J-L, a Computer Science student at Willamette University in Salem, OR, class of 2023. I minor in Mathematics and participate heavily in the music program, where I work as an administrative intern, managing department Web pages, including
+	the <a href="https://willamette.edu/arts-sciences/music/students/index.html" target="_blank">Student Resources</a> and <a href="https://willamette.edu/arts-sciences/music/students/forms/index.html" target="_blank">Forms</a> pages, which I remodeled 
+	from tip to tail (or, as we musicians like to say, <em>da capo al fine</em>) as we transitioned to paperless forms. You can find a few of my solo performances (among other things) on my 
+	<a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank">YouTube channel</a>. </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>J-L DeYoung</b></p><br>
@@ -190,7 +191,7 @@ body, html {
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
     <h3 class="w3-center">GitHub</h3>
-    <p class="w3-center"><em>Find me on <a href="http://github.com/jldeyoung">GitHub!</a> </em></p><br>
+    <p class="w3-center">You can find some examples of my previous projects over on <a href="http://github.com/jldeyoung" target="_blank">GitHub</a>.</p><br>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -272,9 +273,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-light-grey";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-light-grey", " w3-text-black");
     }
 }
 
