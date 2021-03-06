@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -59,11 +60,11 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+    <a href="Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
     <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>-->
@@ -72,9 +73,9 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+    <a href="Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
     <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
@@ -88,20 +89,21 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Programmer. Student. Musician. Photographer.</em></p>
-  <p>Hi there. I'm J-L, a Computer Science student at Willamette University in Salem, OR, class of 2023. I minor in Mathematics and participate heavily in the music program, where I work as an administrative intern, managing department Web pages, including
-	the <a href="https://willamette.edu/arts-sciences/music/students/index.html" target="_blank">Student Resources</a> and <a href="https://willamette.edu/arts-sciences/music/students/forms/index.html" target="_blank">Forms</a> pages, which I remodeled 
-	from tip to tail (or, as we musicians like to say, <em>da capo al fine</em>) as we transitioned to paperless forms. You can find a few of my solo performances (among other things) on my 
+  <h3 class="w3-center w3-text-teal">ABOUT ME</h3>
+  <p class="w3-center w3-text-black"><em>Programmer. Student. Musician. Photographer.</em></p>
+  <p class="w3-text-black">Hi there. I'm J-L, a Computer Science student at Willamette University in Salem, OR, class of 2023. I minor in Mathematics and participate heavily in the music program, where I work as an administrative intern, managing department Web pages, including
+	the <a href="https://willamette.edu/arts-sciences/music/students/index.html" target="_blank">Student Resources</a> and <a href="https://willamette.edu/arts-sciences/music/students/forms/index.html" target="_blank">Forms</a> pages, which I 
+    <a href="Blog/music-forms.html">remodeled</a> from tip to tail (or, as we musicians like to say, <em>da capo al fine</em>) as we transitioned to 
+    paperless forms. You can find a few of my solo performances (among other things) on my 
 	<a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank">YouTube channel</a>. </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>J-L DeYoung</b></p><br>
-      <img src="Images/headshot-2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Headshot" width="500" height="333">
+      <img src="Images/headshot-2.jpg" class="w3-round w3-image" alt="Headshot" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <div class="w3-col m6 w3-hide-small w3-padding-large w3-text-black">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -150,7 +152,7 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">Photography</h3>
+  <h3 class="w3-center w3-text-teal">Photography</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -190,7 +192,7 @@ body, html {
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
-    <h3 class="w3-center">GitHub</h3>
+    <h3 class="w3-center w3-text-teal">GitHub</h3>
     <p class="w3-center">You can find some examples of my previous projects over on <a href="http://github.com/jldeyoung" target="_blank">GitHub</a>.</p><br>
 </div>
 
@@ -212,8 +214,8 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center w3-text-teal">CONTACT ME</h3>
+  <p class="w3-center w3-text-black"><em>Get in touch!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -223,9 +225,9 @@ body, html {
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Boulder, CO<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (720) 364-3657<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jldeyoung@willamette.edu<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <p>Leave me a note here:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -245,7 +247,7 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -273,9 +275,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-light-grey";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-light-grey", " w3-text-black");
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", " w3-text-black");
     }
 }
 
