@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Blog Home</title>
+<title>Music Forms</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,17 +14,23 @@
 <!-- Navbar -->
 <div class="w3-top" style="font-family: Lato">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
-    <a href="Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="toggleFunction()"><i class="fa fa-bars"></i></a>
+    <a href="/~jldeyoung/index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+    <a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+  </div>
+    
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="/~jldeyoung/resume.html" class="w3-bar-item w3-light-grey w3-button" onclick="toggleFunction()">RESUME</a>
+    <a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content-->
 <div class="w3-main w3-two-third" style="padding: 20%; padding-top: 0px; padding-bottom: 0px">
@@ -32,7 +38,7 @@
   <div class="w3-row w3-padding-64">
         <div class="w3-container">
         <h1 class="w3-text-teal w3-XLarge"><a href="music-forms.html" style="text-decoration: none; ">Music Department Forms</a></h1>
-        <h2 class="w3-text-grey w3-medium"><em>March 6th, 2021</em></h2>
+        <h2 class="w3-text-grey w3-medium"><em><script>document.open("music-forms.html"); document.write(document.lastModified)</script></em></h2>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id venenatis sem, nec tempus neque. Nunc pellentesque cursus imperdiet. Maecenas viverra egestas arcu nec congue. Phasellus vel lectus in tortor cursus eleifend sed nec libero. Nulla a lorem vel ante accumsan gravida. Maecenas condimentum, purus a feugiat efficitur, neque diam volutpat arcu, at ornare lectus purus non felis. Etiam ut massa nec elit iaculis pharetra at sed leo. Cras fringilla posuere tincidunt.
       </p><p>
@@ -70,30 +76,7 @@
     </div>
 </footer>
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
+<script src="/~jldeyoung/script.js"></script>
 
 </body>
 </html>

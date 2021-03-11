@@ -5,6 +5,7 @@
 
 html,h1,h2,h3,h4,h5,h6 {
     font-family: "Lato", sans-serif;
+    color: lightseagreen;
 }
 
 .w3-sidebar {
@@ -26,6 +27,11 @@ body {
 a:link {
     color: lightslategrey;
     font-family: Lato;
+}
+
+.date {
+    color: lightgray;
+    font-size: 14pt;
 }
 
 p {

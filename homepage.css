@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-html,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+html,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; color: lightseagreen}
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -31,6 +31,8 @@ p{
 button{
     align-content: center;
 }
+
+#more {display: none;}
 
 .card {
     padding: 10px;
