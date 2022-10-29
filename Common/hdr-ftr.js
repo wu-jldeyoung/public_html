@@ -10,23 +10,6 @@ let appHeader = `
 		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
 	  </div>
 	</div>
-
-	<!-- Sidebar -->
-	<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l2 w3-animate-left" id="mySidebar">
-	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-		<i class="fa fa-remove"></i>
-	  </a>
-	  <h4 class="w3-bar-item"><b>Menu</b></h4>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/index.html#home">Home</a>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/resume.html">Resume</a>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/Blog/index.html">Blog</a>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/index.html#about">About</a>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/index.html#portfolio">Portfolio</a>
-	  <a class="w3-bar-item w3-button w3-hover-black" href="/~jldeyoung/index.html#contact">Contact</a>
-	</nav>
-
-	<!-- Overlay effect when opening sidebar on small screens -->
-	<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 `;
 
 let appFooter = `
@@ -41,6 +24,7 @@ let appFooter = `
 document.getElementById("app-header").innerHTML = appHeader;
 document.getElementById("app-footer").innerHTML = appFooter;
 
+/*
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
@@ -63,3 +47,4 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+*/
