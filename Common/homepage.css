@@ -32,6 +32,12 @@ button{
     align-content: center;
 }
 
+code{
+	font-family: 'Courier New', monospace;
+	color: lightgrey;
+	background-color: darkgrey;
+}
+
 #more {display: none;}
 
 .card {
