@@ -34,8 +34,8 @@ button{
 
 code{
 	font-family: 'Courier New', monospace;
-	color: lightgrey;
-	background-color: darkgrey;
+	color: red;
+	background-color: black;
 }
 
 #more {display: none;}

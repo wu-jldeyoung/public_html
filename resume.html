@@ -26,26 +26,32 @@
     <!-- Left Column -->
     <div class="w3-third" style="color: light-grey; background-color: lightslategrey">
     
-      <div class="w3-blue-gray w3-text-medium-gray w3-card-4">
+      <!--Picture-->
+	  <div class="w3-blue-gray w3-text-medium-gray w3-card-4">
         <div class="w3-display-container" style="overflow: hidden;height: 400px">
           <img src="Images/headshot-1.jpg" alt="Headshot" style="width: 100%">
           <div class="w3-display-bottomleft w3-container w3-text-medium-grey">
             <h2 class="w3-opacity-min w3-padding-small w3-blue-grey w3-text-medium-gray">Juni L DeYoung</h2>
           </div>
-        </div>
-        <div class="w3-container">
+        <!--End picture-->
+		</div>
+        
+		<!--Contact info and dropdowns-->
+		<div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-medium-grey"></i>Student</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-medium-grey"></i>Boulder, CO</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-medium-grey"></i><a href="mailto:jldeyoung@willamette.edu">jldeyoung@willamette.edu</a></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-medium-grey"></i><a href="tel:7203643657">(720)364-3657</a> </p>
           <hr>
 		  
-		   <div class="w3-large w3-card-4 w3-dark-gray w3-padding-small">
-		   <button onclick="hide_show('Demo1')" class="w3-button w3-block w3-left-align">
-			<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-medium-grey"></i>Skills</b></p></button>
+		   <!--Skills-->
+		   <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
+			<button onclick="hide_show('skills')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-medium-grey"></i>Skills</b></p></button>
+			<div id="skills" class="w3-container w3-hide">
           
 			<button onclick="hide_show('pgm-lang')" class="w3-button w3-block w3-left-align">Programming and Markup Languages</button>
-				<ul id="pgm-lang" class="w3-container w3-hide">
+				<div id="pgm-lang" class="w3-container w3-hide">
+				<ul>
 				<li>Java</li>
 				<li>C</li>
 				<li>Python</li>
@@ -53,43 +59,77 @@
 				<li>Markdown</li>
 				<li><span class="latex" style="font-size: 1em;">L<sup style="text-transform: uppercase; font-size: 0.85em;
 		  vertical-align: -0.2em; margin-left: -0.36em; margin-right: -0.15em;">a</sup>T<sub style="text-transform: uppercase; vertical-align: -0.05ex; margin-left: -0.1667em; margin-right: -0.125em;">e</sub>X</span></li>
+				<ul><li>Beamer</li></ul>
 				<li>HTML, CSS, JavaScript</li><ul><li>w3-css</li></ul>
 				</ul>
+				</div>
 			
-			<!--TODO: convert the rest of this list into accordion drop-downs-->
-			
-			<ul>
-			<li>Software Development</li>
+			<button onclick="hide_show('sft-dev')" class="w3-button w3-block w3-left-align">Software Development</button>
+				<div id="sft-dev" class="w3-container w3-hide">
 				<ul>
 				<li>Agile development/Scrum</li>
 				<li>Unix/shell commands</li>
 				<li>Git/<a href="https://github.com/wu-jldeyoung">GitHub</a></li>
 				<li>Cascade CMS</li>
 				</ul>
-			<li>GIS</li><ul><li>ArcGIS</li><li>QGIS</li></ul>
-			<li>Media
+				</div>
+			
+			<button onclick="hide_show('gis')" class="w3-button w3-block w3-left-align">GIS</button>
+				<div id="gis" class="w3-container w3-hide">
 				<ul>
-				<li>Audio/Video</li>
-					<ul>
-					<li>Ableton Live</li>
-					<li>Audacity</li>
-					<li>Logic</li>
-					<li>HitFilm</li>
-					<li>OBS</li>
-					</ul>
-				<li>Photo/Illustration</li>
-					<ul>
-					<li>paint.NET</li>
-					<li>Adobe Photoshop</li>
-					<li>GIMP</li>
-					<li>Darktable</li>
-					<li>Adobe Illustrator</li>
-					</ul>
+				<li>ArcGIS</li>
+				<li>QGIS</li>
 				</ul>
-			</li>
-			<li>Microsoft Office</li>
-			<li>Google Docs</li>
-			<li>Communication</li>
+				</div>
+			
+			<button onclick="hide_show('media')" class="w3-button w3-block w3-left-align">Media</button>
+				<div id="media" class="w3-container w3-hide">
+				<ul>
+					<button onclick="hide_show('av')" class="w3-button w3-block w3-left-align">Audio/Video</button>
+						<div id="av" class="w3-container w3-hide">
+						<ul>
+						<li>Ableton Live</li>
+						<li>Audacity</li>
+						<li>Logic</li>
+						<li>HitFilm</li>
+						<li>OBS</li>
+						</ul>
+					</div>
+					<button onclick="hide_show('photo')" class="w3-button w3-block w3-left-align">Photo/Illustration</button>
+						<div id="photo" class="w3-container w3-hide">
+						<ul>
+						<li>paint.NET</li>
+						<li>Adobe Photoshop</li>
+						<li>GIMP</li>
+						<li>Darktable</li>
+						<li>Adobe Illustrator</li>
+						</ul>
+						</div>
+				</ul>
+				</div>
+			<button onclick="hide_show('msft-office')" class="w3-button w3-block w3-left-align">Microsoft Office</button>
+				<div id="msft-office" class="w3-container w3-hide">
+				<ul>
+				<li>Word</li>
+				<li>Excel</li>
+				<li>Powerpoint</li>
+				<li>Publisher</li>
+				</ul>
+				</div>
+			<button onclick="hide_show('drive')" class="w3-button w3-block w3-left-align">Google Drive</button>
+				<div id="drive" class="w3-container w3-hide">
+				<ul>
+				<li>Docs</li>
+				<li>Sheets</li>
+				<li>Slides</li>
+				<li>Calendar</li>
+				<li>Colaboratory</li>
+				<li>Drawings</li>
+				<li>My Maps</li>
+				</ul>
+				</div>
+			<button onclick="hide_show('comm')" class="w3-button w3-block w3-left-align">Communication</button>
+				<div id="comm" class="w3-container w3-hide">
 				<ul>
 				<li>Discord</li>
 				<li>Slack</li>
@@ -99,31 +139,64 @@
 					<ul>
 					<li>Asana</li>
 					<li>Trello</li>
+					<li>Google Keep</li>
 					</ul>
 				</ul>
-		  </ul>
+				</div>
+		  </div>
+		  
+		  <!--End Skills-->
+		  </div>
+          
+          <br>
+		  
+		  <!--Awards-->
+		  <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
+		  <button onclick="hide_show('awd')" class="w3-button w3-block w3-left-align"><p class="w3-large w3-text-light-grey"><b><i class="fa fa-trophy fa-fw w3-margin-right w3-text-light-grey"></i>Awards</b></p></button>
+			<div id="awd" class="w3-container w3-hide">
+				<ul>
+				<li>Eagle Scout Award</li>
+				<li>Willamette University DataFest 2022, Best Insight</li>
+				</ul>
+			</div>		  
 		  </div>
           
           <br>
 
-          <div class="w3-card-4 w3-dark-gray w3-padding-small">
-		  <p class="w3-large w3-text-light-grey"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-light-grey"></i>Foreign Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-black" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-black" style="height:24px;width:85%"></div>
-          </div>
-          <p>Russian</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-black" style="height:24px;width:35%"></div>
-          </div>
+          <!--Foreign Languages-->
+		  <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
+		  <button onclick="hide_show('lang')" class="w3-button w3-block w3-left-align"><p class="w3-large w3-text-light-grey"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-light-grey"></i>Foreign Languages</b></p></button>
+			  <div id="lang" class="w3-container w3-hide">
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge w3-black" style="height:30px;width:100%">
+				<div class="w3-center w3-text-white">Native English Speaker</div>
+				</div>
+			  </div>
+			  </p>
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge w3-black" style="height:30px;width:85%">
+				<div class="w3-center w3-text-white">Biliterate Spanish</div>
+				</div>
+			  </div>
+			  </p>
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge w3-black" style="height:30px;width:35%">
+				<div class="w3-center w3-text-white">Russian</div>
+				</div>
+			  </div>
+			  </p>
 		  </div>
-          <br>
-        </div>
-      </div><br>
+		  </div>
+		<br>
+		
+		<!--End Contact info-->
+		</div>
+	  </div>
+	  <br>
+	  
 
     <!-- End Left Column -->
     </div>
