@@ -17,16 +17,6 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
 function loadMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -46,15 +36,29 @@ function loadMore() {
 let appHeader = `
     <!-- Navbar -->
 	<div class="w3-top" style="font-family: Lato">
+	  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
 	  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
 		<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-		<a href="/~jldeyoung/index.html#home" class="w3-bar-item w3-button">HOME</a>
+		<a href="/~jldeyoung/index.html#home" class="w3-bar-item w3-button"> HOME</a>
 		<a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="/~jldeyoung/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
 		<a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 		<a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
 		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
 	  </div>
 	</div>
+	
+	<!-- Navbar on small screens -->
+	  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+		<a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		<a href="/~jldeyoung/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+		<a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+		<a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+		<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
+	  </div>
 `;
 
 let appFooter = `
@@ -73,6 +77,16 @@ let appFooter = `
 
 document.getElementById("app-header").innerHTML = appHeader;
 document.getElementById("app-footer").innerHTML = appFooter;
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 
 function hide_show(id) {
   var x = document.getElementById(id);
