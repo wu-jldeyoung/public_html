@@ -14,7 +14,7 @@
     
 <body>
 
-<script defer src="https://www.willamette.edu/~jldeyoung/Common/hdr-ftr.js"></script>
+<script defer src="Common/script.js"></script>
 <header id="app-header"></header>
     
 <!-- Page Container -->
@@ -25,28 +25,40 @@
   
     <!-- Left Column -->
     <div class="w3-third" style="color: light-grey">
-    
-      <!--Picture-->
-	  <div class="w3-blue-gray w3-text-medium-gray w3-card-4">
-        <div class="w3-display-container" style="overflow: hidden;height: 400px">
-          <img src="Images/headshot-1.jpg" alt="Headshot" style="width: 100%">
-          <div class="w3-display-bottomleft w3-container w3-text-medium-grey">
-            <h2 class="w3-opacity-min w3-padding-small w3-blue-grey w3-text-medium-gray">Juni L DeYoung</h2>
-          </div>
-        <!--End picture-->
-		</div>
         
-		<!--Contact info and dropdowns-->
-		<div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-medium-grey"></i>Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-medium-grey"></i>Boulder, CO</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-medium-grey"></i><a href="mailto:jldeyoung@willamette.edu">jldeyoung@willamette.edu</a></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-medium-grey"></i><a href="tel:7203643657">(720)364-3657</a> </p>
-          <hr>
+		
+		<!--Cards container-->
+		<div class="w3-container w3-blue-grey w3-round w3-padding-16">
+		  
+		  <!--Contact card-->
+		  <div class="w3-container w3-card w3-round-large w3-padding-16" style="background-color:darkslategrey">
+			  <!--Picture-->
+			  <div class="w3-text-medium-gray w3-round-xlarge">
+				<div class="w3-display-container w3-round-large" style="overflow: hidden;height: 350px">
+				  <img src="Images/headshot-math-square.jpg" alt="Headshot" style="width: 100%">
+				  <div class="w3-display-bottomleft w3-container w3-text-medium-grey">
+					<h2 class="w3-opacity-min w3-padding-small w3-round-xlarge" style="color:lightseagreen; background-color:darkslategrey">Juni L DeYoung</h2>
+				  </div>
+				<!--End picture-->
+				</div>
+			  </div>
+			  <br>
+			  <button onclick="hide_show('contact')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-address-card fa-fw w3-margin-right" style="color:lightseagreen"></i>Contact</b></p></button>
+			  <div id="contact" class="w3-container w3-hide">
+			  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Student</p>
+			  <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Boulder, CO</p>
+			  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="mailto:jldeyoung@willamette.edu">jldeyoung@willamette.edu</a></p>
+			  <p><i class="fa fa-github fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="https://github.com/wu-jldeyoung" target="_blank">GitHub/wu-jldeyoung</a></p>
+			  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="tel:7203643657">(720)364-3657</a> </p>
+			  </div>
+		  </div>
+		  <!--end contact-->
+		  
+		  <br>
 		  
 		   <!--Skills-->
-		   <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
-			<button onclick="hide_show('skills')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-medium-grey"></i>Skills</b></p></button>
+		   <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
+			<button onclick="hide_show('skills')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right" style="color:lightseagreen"></i>Skills</b></p></button>
 			<div id="skills" class="w3-container w3-hide">
           
 			<button onclick="hide_show('pgm-lang')" class="w3-button w3-block w3-left-align">Programming and Markup Languages</button>
@@ -151,8 +163,8 @@
           <br>
 		  
 		  <!--Awards-->
-		  <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
-		  <button onclick="hide_show('awd')" class="w3-button w3-block w3-left-align"><p class="w3-large w3-text-light-grey"><b><i class="fa fa-trophy fa-fw w3-margin-right w3-text-light-grey"></i>Awards</b></p></button>
+		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
+		  <button onclick="hide_show('awd')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-trophy fa-fw w3-margin-right" style="color:lightseagreen"></i>Awards</b></p></button>
 			<div id="awd" class="w3-container w3-hide">
 				<ul>
 				<li>Eagle Scout Award</li>
@@ -164,8 +176,8 @@
           <br>
 
           <!--Foreign Languages-->
-		  <div class="w3-medium w3-card-4 w3-dark-gray w3-padding-small">
-		  <button onclick="hide_show('lang')" class="w3-button w3-block w3-left-align"><p class="w3-large w3-text-light-grey"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-light-grey"></i>Foreign Languages</b></p></button>
+		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
+		  <button onclick="hide_show('lang')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right" style="color:lightseagreen"></i>Foreign Languages</b></p></button>
 			  <div id="lang" class="w3-container w3-hide">
 			  <p>
 			  <div class="w3-light-grey w3-round-xlarge">
@@ -190,11 +202,10 @@
 			  </p>
 		  </div>
 		  </div>
-		<br>
-		
-		<!--End Contact info-->
+				
+		<!--End Left Card-->
 		</div>
-	  </div>
+	  
 	  <br>
 	  
 
@@ -204,13 +215,14 @@
     <!-- Right Column -->
     <div class="w3-twothird w3-margin-bottom">
     
-      <div class="w3-blue-gray  w3-container w3-card w3-padding-16">
-        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Work Experience</h2>
+      <!--Work Experience-->
+	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:lightseagreen"></i>Work Experience</h2>
 		<div id="work" class="w3-container">	
 			<!--Music Dept-->
-			<div class="w3-container w3-card" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
 			  <h5><b>Work-Study Assistant / Willamette University Music Department</b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-round" style="background-color:lightseagreen">Current</span></h6>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
 			    <ul class="w3-large">
 				<li>Created and processed paperless forms in Google Forms and Sheets</li>
 				<li>Designed and formatted concert programs in Google Docs and Microsoft Office</li>
@@ -220,7 +232,7 @@
 			<!--End-->
 			<br>
 			<!--Template-->
-			<div class="w3-container w3-card" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
 			  <h5><b>Job Title / Company</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
 			    <ul class="w3-large">
@@ -235,10 +247,11 @@
 	  
 	  <br>
 
-      <div class="w3-container w3-card w3-blue-gray w3-padding-16">
-        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-dark-gray"></i>Education</h2>
-        <!--Template-->
-		<div class="w3-container w3-card" style="background-color:darkslategrey">
+      <!--Education-->
+	  <div class="w3-container w3-card w3-blue-gray w3-padding-16 w3-round">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge" style="color:lightseagreen"></i>Education</h2>
+        <!--WU-->
+		<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
 		  <h5><b>Willamette University</b></h5>
 		  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019-2023</h6>
 			<p>Bachelor of Science, Computer Science</p>
@@ -246,8 +259,8 @@
 		</div>
 		<!--End-->
 		<br>
-        <!--Template-->
-		<div class="w3-container w3-card" style="background-color:darkslategrey">
+        <!--BHS-->
+		<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
 		  <h5><b>Boulder High School</b></h5>
 		  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2019</h6>
 		</div>
