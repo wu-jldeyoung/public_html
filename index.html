@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Common/homepage.css">
+<link rel="stylesheet" href="Common/homepage.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -48,7 +48,7 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-device-width: 800px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
@@ -203,7 +203,7 @@ body, html {
     <!--<p id="dots">&nbsp;</p>-->
 	
 	<div class="w3-container">
-		<p><button class="w3-button w3-padding w3-center w3-light-grey" id="myBtn" onclick="hide_show('more');">More photos</button></p>
+		<p><button class="w3-button w3-padding w3-col m12 w3-light-grey" id="myBtn" onclick="hide_show('more');">More photos</button></p>
 	</div>
     
     <!--Show More section-->
@@ -269,7 +269,7 @@ body, html {
         <a href="https://www.moddb.com/mods/phi-squad">videogame mods</a>, and even a 
         <a href="https://youtu.be/BR_1VtQdF34" target="_blank">music video</a>. <!--Find more details in my blog!-->
 	</p>
-	<p><em>Click on the images to make them bigger.</em></p><br>
+	<p class="w3-center"><em>Click on the images to make them bigger.</em></p><br>
   
       <!--Responsive Grid-->
       <div class="w3-row-padding w3-center">
@@ -296,7 +296,7 @@ body, html {
     
     <div class="w3-container w3-padding w3-center">
         <h2 class="w3-center w3-text-teal">Music</h2>
-		<p>I have taken voice lessons for many years, and that work is going to be showcased on April 22, 2023 at my Senior Recital, where I will be performing R. Vaughan Williams' <a href="https://en.wikipedia.org/wiki/Songs_of_Travel" target="_blank"><em>Songs of Travel</em></a> song cycle, a setting of <a href="https://en.wikisource.org/wiki/Songs_of_Travel_and_Other_Verses" target="_blank">poetry by Robert Louis Stevenson</a>. The recital will take place at 3:00 PM in Cone Chapel, located in Willamette University's Waller Hall.</p>
+		<p>I have taken voice lessons for many years, and that work is going to be showcased on April 22, 2023 at my Senior Recital, where I will be performing R. Vaughan Williams' <a href="https://en.wikipedia.org/wiki/Songs_of_Travel" target="_blank"><cite author="R. Vaughan Williams">Songs of Travel</cite></a> song cycle, a setting of <a href="https://en.wikisource.org/wiki/Songs_of_Travel_and_Other_Verses" target="_blank">poetry by Robert Louis Stevenson</a>. The recital will take place at 3:00 PM in Cone Chapel, located in Willamette University's Waller Hall.</p>
         <p class="w3-center">You can find many of my recordings and music videos over on <a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank">YouTube</a>. Here are some highlights.</p>
     
         <div class="w3-row-padding w3-center">
@@ -349,13 +349,13 @@ body, html {
   <div class="w3-row w3-padding-32 w3-section">
       <div class="w3-col m2 w3-container"></div>
     <div class="w3-col m3 w3-container">
-      <img src="Images/headshot-1.JPG" class="w3-image w3-round w3-right" style="height:200px">
+      <img src="Images/headshot-math-square.JPG" class="w3-image w3-round w3-right" style="height:140px">
     </div>
     <div class="w3-col m6 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Boulder, CO<br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: <a href="tel:7203643657">(720) 364-3657</a><br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:jldeyoung@willamette.edu">jldeyoung@willamette.edu</a><br>
+      <div class="w3-large w3-margin-bottom-32">
+        <span class="w3-hover-text-grey"><a href="https://www.google.com/maps/place/Boulder,+CO"><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> Boulder, CO</span></a><br>
+          <span class="w3-hover-text-grey"><a href="tel:7203643657"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (720) 364-3657</a></span><br>
+          <span class="w3-hover-text-grey"><a href="mailto:jldeyoung@willamette.edu"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jldeyoung@willamette.edu</a></span>
       </div>
       <!--<p>Leave me a note here:</p>
       <form action="/action_page.php" target="_blank">
@@ -375,7 +375,9 @@ body, html {
     </div>
   </div>
 </div>
- 
+
+</body>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <!--<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>-->
@@ -387,7 +389,5 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <p>Images by Juni L DeYoung &copy; 2022.</p>
 </footer>
-
-</body>
 
 </html>
