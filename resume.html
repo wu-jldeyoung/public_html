@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Common/homepage.css">
+<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
     
 <style>
     p {font-size: 14pt}
@@ -47,7 +47,7 @@
 				</div>
 			  </div>
 			  <br>
-			  <button onclick="hide_show('contact')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-address-card fa-fw w3-margin-right" style="color:lightseagreen"></i>Contact</b></p></button>
+			  <button onclick="hide_show('contact')" class="w3-button w3-round w3-block w3-left-align w3-hover-blue-grey"><p class="w3-large"><b><i class="fa fa-address-card fa-fw w3-margin-right" style="color:lightseagreen"></i>Contact</b></p></button>
 			  <div id="contact" class="w3-container w3-hide">
 			  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Student</p>
 			  <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Boulder, CO</p>
@@ -62,16 +62,30 @@
 		  
 		   <!--Skills-->
 		   <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
-			<button onclick="hide_show('skills')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right" style="color:lightseagreen"></i>Skills</b></p></button>
+			<button onclick="hide_show('skills')" class="w3-button w3-round w3-block w3-left-align w3-hover-blue-grey"><p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right" style="color:lightseagreen"></i>Skills</b></p></button>
 			<div id="skills" class="w3-container w3-hide">
           
-			<button onclick="hide_show('pgm-lang')" class="w3-button w3-block w3-left-align">Programming and Markup Languages</button>
-				<div id="pgm-lang" class="w3-container w3-hide">
+			<button onclick="hide_show('pgm-lang')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Programming and Markup Languages</button>
+				<div id="pgm-lang" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Java</li>
+					<ul>
+					<li>JavaFX</li>
+					<li>Processing</li>
+					</ul>
 				<li>C</li>
 				<li>Python</li>
-				<li>Assembly</li><ul><li>RISC-V</li></ul>
+					<ul>
+						<li>iPython, Jupyter Notebooks</li>
+						<li>Pandas</li>
+						<li>Matplotlib</li>
+						<li>numPy</li>
+						<li>symPy</li>
+					</ul>
+				<li>Assembly</li>
+					<ul>
+					<li>RISC-V</li>
+					</ul>
 				<li>Markdown</li>
 				<li><span class="latex" style="font-size: 1em;">L<sup style="text-transform: uppercase; font-size: 0.85em;
 		  vertical-align: -0.2em; margin-left: -0.36em; margin-right: -0.15em;">a</sup>T<sub style="text-transform: uppercase; vertical-align: -0.05ex; margin-left: -0.1667em; margin-right: -0.125em;">e</sub>X</span></li>
@@ -80,8 +94,8 @@
 				</ul>
 				</div>
 			
-			<button onclick="hide_show('sft-dev')" class="w3-button w3-block w3-left-align">Software Development</button>
-				<div id="sft-dev" class="w3-container w3-hide">
+			<button onclick="hide_show('sft-dev')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Software Development</button>
+				<div id="sft-dev" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Agile development/Scrum</li>
 				<li>Unix/shell commands</li>
@@ -90,19 +104,37 @@
 				</ul>
 				</div>
 			
-			<button onclick="hide_show('gis')" class="w3-button w3-block w3-left-align">GIS</button>
-				<div id="gis" class="w3-container w3-hide">
+			<button onclick="hide_show('os')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Operating Systems</button>
+				<div id="os" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Windows</li>
+				<ul>
+					<li>11</li>
+					<li>10</li>
+					<li>7</li>
+					<li>XP</li>
+				</ul>
+				<li>Linux</li>
+					<ul>
+						<li>Ubuntu 20.04</li>
+						<li>Fedora</li>
+					</ul>
+				</ul>
+				</div>
+			
+			<button onclick="hide_show('gis')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">GIS</button>
+				<div id="gis" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>ArcGIS</li>
 				<li>QGIS</li>
 				</ul>
 				</div>
 			
-			<button onclick="hide_show('media')" class="w3-button w3-block w3-left-align">Media</button>
+			<button onclick="hide_show('media')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Media</button>
 				<div id="media" class="w3-container w3-hide">
 				<ul>
-					<button onclick="hide_show('av')" class="w3-button w3-block w3-left-align">Audio/Video</button>
-						<div id="av" class="w3-container w3-hide">
+					<button onclick="hide_show('av')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey"  style="background-color:#202030">Audio/Video</button>
+						<div id="av" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 						<ul>
 						<li>Ableton Live</li>
 						<li>Audacity</li>
@@ -111,20 +143,29 @@
 						<li>OBS</li>
 						</ul>
 					</div>
-					<button onclick="hide_show('photo')" class="w3-button w3-block w3-left-align">Photo/Illustration</button>
-						<div id="photo" class="w3-container w3-hide">
+					<button onclick="hide_show('photo')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey"  style="background-color:#202030">Photo/Illustration</button>
+						<div id="photo" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 						<ul>
 						<li>paint.NET</li>
-						<li>Adobe Photoshop</li>
 						<li>GIMP</li>
 						<li>Darktable</li>
-						<li>Adobe Illustrator</li>
+						</ul>
+						</div>
+					<button onclick="hide_show('adobe')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey"  style="background-color:#202030">Adobe</button>
+						<div id="adobe" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+						<ul>
+						<li>Acrobat Pro</li>
+							<ul>
+								<li>Fillable PDF forms</li>
+							</ul>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
 						</ul>
 						</div>
 				</ul>
 				</div>
-			<button onclick="hide_show('msft-office')" class="w3-button w3-block w3-left-align">Microsoft Office</button>
-				<div id="msft-office" class="w3-container w3-hide">
+			<button onclick="hide_show('msft-office')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Microsoft Office</button>
+				<div id="msft-office" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Word</li>
 				<li>Excel</li>
@@ -132,11 +173,12 @@
 				<li>Publisher</li>
 				</ul>
 				</div>
-			<button onclick="hide_show('drive')" class="w3-button w3-block w3-left-align">Google Drive</button>
-				<div id="drive" class="w3-container w3-hide">
+			<button onclick="hide_show('drive')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Google Drive</button>
+				<div id="drive" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Docs</li>
 				<li>Sheets</li>
+				<li>Forms</li>
 				<li>Slides</li>
 				<li>Calendar</li>
 				<li>Colaboratory</li>
@@ -144,8 +186,8 @@
 				<li>My Maps</li>
 				</ul>
 				</div>
-			<button onclick="hide_show('comm')" class="w3-button w3-block w3-left-align">Communication</button>
-				<div id="comm" class="w3-container w3-hide">
+			<button onclick="hide_show('comm')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-blue-grey">Communication</button>
+				<div id="comm" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Discord</li>
 				<li>Slack</li>
@@ -168,8 +210,8 @@
 		  
 		  <!--Awards-->
 		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
-		  <button onclick="hide_show('awd')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-trophy fa-fw w3-margin-right" style="color:lightseagreen"></i>Awards</b></p></button>
-			<div id="awd" class="w3-container w3-hide">
+		  <button onclick="hide_show('awd')" class="w3-button w3-round w3-block w3-left-align w3-hover-blue-grey"><p class="w3-large"><b><i class="fa fa-trophy fa-fw w3-margin-right" style="color:lightseagreen"></i>Awards</b><!--<i class="fas fa-caret-square-down fa-fw w3-text-blue-grey" style="text-align:right"></i>--></p></button>
+			<div id="awd" class="w3-container w3-hide w3-card-4 w3-margin w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Eagle Scout Award</li>
 				<li>Willamette University DataFest 2022, Best Insight</li>
@@ -181,25 +223,25 @@
 
           <!--Foreign Languages-->
 		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
-		  <button onclick="hide_show('lang')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right" style="color:lightseagreen"></i>Foreign Languages</b></p></button>
+		  <button onclick="hide_show('lang')" class="w3-button w3-round w3-block w3-left-align w3-hover-blue-grey"><p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right" style="color:lightseagreen"></i>Foreign Languages</b></p></button>
 			  <div id="lang" class="w3-container w3-hide">
 			  <p>
 			  <div class="w3-light-grey w3-round-xlarge">
-				<div class="w3-round-xlarge w3-black" style="height:30px;width:100%">
+				<div class="w3-round-xlarge" style="height:30px;width:100%;background-color:#202030">
 				<div class="w3-center w3-text-white">Native English Speaker</div>
 				</div>
 			  </div>
 			  </p>
 			  <p>
 			  <div class="w3-light-grey w3-round-xlarge">
-				<div class="w3-round-xlarge w3-black" style="height:30px;width:85%">
+				<div class="w3-round-xlarge" style="height:30px;width:85%;background-color:#202030">
 				<div class="w3-center w3-text-white">Biliterate Spanish</div>
 				</div>
 			  </div>
 			  </p>
 			  <p>
 			  <div class="w3-light-grey w3-round-xlarge">
-				<div class="w3-round-xlarge w3-black" style="height:30px;width:35%">
+				<div class="w3-round-xlarge" style="height:30px;width:35%;background-color:#202030">
 				<div class="w3-center w3-text-white">Russian</div>
 				</div>
 			  </div>
@@ -211,10 +253,10 @@
 		  
 		  <!--Education-->
 		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
-			<button onclick="hide_show('edu')" class="w3-button w3-block w3-left-align"><p class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Education</b></p></button>
+			<button onclick="hide_show('edu')" class="w3-button w3-round w3-block w3-left-align w3-hover-blue-grey"><p class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Education</b></p></button>
 				<div id="edu" class="w3-container w3-hide">
 				<!--WU-->
-				<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+				<div class="w3-container w3-card w3-round" style="background-color:#202030">
 				  <h5><b>Willamette University</b></h5>
 				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019-2023</h6>
 					<p>Bachelor of Science, Computer Science</p>
@@ -223,7 +265,7 @@
 				<!--End-->
 				<br>
 				<!--BHS-->
-				<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+				<div class="w3-container w3-card w3-round" style="background-color:#202030">
 				  <h5><b>Boulder High School</b></h5>
 				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2019</h6>
 				</div>
@@ -247,11 +289,11 @@
     
       <!--Work Experience-->
 	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
-        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:lightseagreen"></i>Work Experience</h2>
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Work Experience</h2>
 		<div id="work" class="w3-container">	
 			<!--Music Dept-->
 			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
-			  <h5><b>Work-Study Assistant / Willamette University Music Department</b></h5>
+			  <h5><b>Work-Study Assistant / Willamette University Music <abbr title="Department">Dept.</abbr></b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
 			    <ul class="w3-large">
 				<li>Created and processed paperless forms in Google Forms and Sheets</li>
@@ -261,8 +303,56 @@
 			</div>
 			<!--End-->
 			<br>
-			<!--Template-->
+			<!--RA-->
 			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			  <h5><b>Resident Advisor / Willamette University Residence Life and Housing</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			<br>
+			<!--Aphrodite-->
+			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			  <h5><b>Research Assistant / Willamette University Computer Science <abbr title="Department">Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<br>
+			<!--End Card-->
+			<!--MarCom Web-->
+			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			  <h5><b>Web Production Assistant / Willamette University Marketing and Communications</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<br>
+			<!--End Card-->
+			<!--Discord-->
+			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			  <h5><b>Student Programmer / Willamette University <abbr title="Computer Science Department">CS Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<br>
+			<!--End Card-->
+			<!--Template-->
+			<!--<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
 			  <h5><b>Job Title / Company</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
 			    <ul class="w3-large">
@@ -271,6 +361,7 @@
 				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
 				</ul>
 			</div>
+			<br>
 			<!--End Card-->
 		</div>
       </div>
@@ -280,9 +371,40 @@
 		
 		<!--Volunteer Experience-->
 		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
-        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:lightseagreen"></i>Volunteer Experience</h2>
-			<!--Template-volunteer-->
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fas fa-hand-holding-heart fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Volunteer Experience</h2>
+			<!--BSA-->
 			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
+			  <h5><b>Member / Scouts BSA Troop 77</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2012 - May 2019</h6>
+				<ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			  <h5><b>Senior Patrol Leader</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>April  - October 2018</h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<br>
+			<!--End Card-->
+			<!--TA-->
+			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
+			  <h5><b>Teaching Assistant / Boulder High School</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
+			    <ul class="w3-large">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<br>
+			<!--End Card-->
+			<!--Template-volunteer-->
+			<!--<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
 			  <h5><b>Position / Organization</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
 			    <ul class="w3-large">
@@ -291,6 +413,7 @@
 				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
 				</ul>
 			</div>
+			<br>
 			<!--End Card-->
 		</div>
 		<!--End Section-->
@@ -299,7 +422,7 @@
 		
 		<!--Coursework-->
 		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
-        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:lightseagreen"></i>Highlighted Coursework</h2>
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Highlighted Coursework</h2>
 			<!--Course Template-->
 			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
 			  <h5><b>Course Title</b></h5>
